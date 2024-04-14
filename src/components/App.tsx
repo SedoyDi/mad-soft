@@ -11,8 +11,9 @@ const App: React.FC = observer(() => {
   const { timerValue, warning, finished, timer } = timerStore;
 
   useEffect(() => {
-    timer();
-  }, [timerValue])
+    const interval = setInterval(timer, 1000);
+    return () => clearInterval(interval);
+  }, [])
 
   return (
     <div className='app'>
