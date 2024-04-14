@@ -1,0 +1,14 @@
+.topic {
+  display: block;
+  width: 35px;
+  height: 9px;
+  border-radius: 5px;
+  background-color: #c5c5c5;
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.15);
+}
+.topic.active {
+  background-color: #c70000;
+}
+.topic.finished {
+  background-color: #020202;
+}
