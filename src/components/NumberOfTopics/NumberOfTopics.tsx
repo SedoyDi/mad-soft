@@ -1,18 +1,16 @@
 import "./NumberOfTopics.css";
 import Topic from "./Topic/Topic";
-
-function NumberOfTopics(): JSX.Element {
+interface NumberOfTopicsProps {
+    questionList: {
+        active: boolean;
+        answer: string;
+    }[]
+}
+function NumberOfTopics({ questionList }: NumberOfTopicsProps): JSX.Element {
     return (
         <section className="number-of-topics">
             <ul className="number-of-topics__list">
-                <Topic />
-                <Topic />
-                <Topic />
-                <Topic />
-                <Topic />
-                <Topic />
-                <Topic />
-                <Topic />
+                {questionList.map((question, key) => <Topic key={key} question={question} />)}
             </ul>
         </section>
     )

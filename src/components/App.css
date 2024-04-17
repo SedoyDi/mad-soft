@@ -6,6 +6,7 @@
   background-color: #f2f2f2;
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.15);
   width: 80vw;
+  height: max-content;
 }
 .app__header {
   width: 95%;
@@ -30,6 +31,5 @@
   flex-direction: column;
   gap: 20px;
   width: 100%;
-  height: 50vh;
   margin: 20px auto 0;
 }
