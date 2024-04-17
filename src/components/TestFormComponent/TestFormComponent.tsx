@@ -22,7 +22,6 @@ function TestFormComponent({ finished, question, goToNextQuestion, addAnswer }: 
         }
     }
 
-
     function onSubmit(event: React.FormEvent<HTMLFormElement>): void {
         event.preventDefault();
         if (!finished) {

@@ -1,4 +1,3 @@
-import { SetStateAction } from "react";
 import "./TestInput.css";
 
 interface TestInputProps {
@@ -13,7 +12,7 @@ function TestInput({ value, answerType, name, label, onChange }: TestInputProps)
 
     const initialValue = (answerType === "radio" || answerType === "checkbox")
         ? label
-        : ""
+        : value;
 
     const checked = (answerType === "radio")
         ? (value === initialValue)
@@ -21,7 +20,7 @@ function TestInput({ value, answerType, name, label, onChange }: TestInputProps)
 
     return (
         answerType === "textarea"
-            ? <textarea name={name} className='textarea' onChange={onChange}></textarea>
+            ? <textarea name={name} className='textarea' onChange={onChange} />
             : <div className="input-container">
                 <input
                     type={answerType}
@@ -29,10 +28,7 @@ function TestInput({ value, answerType, name, label, onChange }: TestInputProps)
                     className='input'
                     onChange={onChange}
                     checked={checked}
-                    value={
-                        (answerType === "radio" || answerType === "checkbox")
-                            ? initialValue
-                            : value} />
+                    value={initialValue} />
                 <label htmlFor={name}>{label}</label>
             </div>
     );
