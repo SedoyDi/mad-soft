@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/mad-soft/static/css/main.7e404889.css",
+    "main.js": "/mad-soft/static/js/main.2f0d3652.js",
+    "index.html": "/mad-soft/index.html",
+    "main.7e404889.css.map": "/mad-soft/static/css/main.7e404889.css.map",
+    "main.2f0d3652.js.map": "/mad-soft/static/js/main.2f0d3652.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7e404889.css",
+    "static/js/main.2f0d3652.js"
+  ]
+}
